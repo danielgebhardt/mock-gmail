@@ -24,9 +24,81 @@
   color: white;
 }
 
+.menu {
+  margin: 10px;
+}
+
+.button {
+
+  width: 8em;
+  height: 3em;
+}
+
 .App-link {
   color: #61dafb;
 }
+
+.searchBar {
+  border: solid #000000 1px;
+}
+
+.sideMenu {
+  width: 30%;
+
+  float: left;
+}
+
+.emailWindow {
+  width: 65%;
+  border: solid #000000 1px;
+  float: left;
+}
+
+.email {
+  width: 100%;
+  padding-bottom: 1.5em;
+  padding-top: 1.5em;
+  transition: box-shadow .3s;
+  border-radius:10px;
+}
+
+.email:hover {
+  box-shadow: 0 0 11px rgba(33,33,33,.2);
+  font-weight: bold;
+}
+
+.singleEmail {
+  text-align: left;
+  margin: 15px;
+}
+
+.sender {
+  width: 20%;
+  float: left;
+}
+
+.emailOdd {
+  background-color: #ffffff;
+}
+
+.emailEven {
+  background-color: #f0f0f0;
+}
+
+.subject {
+  width: 50%;
+  float: left;
+}
+
+.dateReceived {
+  width: 25%;
+  float: left;
+}
+
+
+
+
+
 
 @keyframes App-logo-spin {
   from {
