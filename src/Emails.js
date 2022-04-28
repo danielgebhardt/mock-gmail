@@ -1,10 +1,7 @@
-import React, {useState} from 'react';
 import Email from './Email';
 import Compose from "./Compose";
 
 const Emails = (props) => {
-
-
     let alternator = true;
 
     const oddOrEven = () => {
@@ -50,7 +47,7 @@ const Emails = (props) => {
     );
 
     if (props.compose) {
-        return <Compose/>
+        return <Compose composeSent={props.composeSent} setComposeSent={props.setComposeSent}/>
     } else {
         return (props.searchResults.length > 0) ? searchResults : (props.currentEmail?.id) ? singleEmail : emailList;
     }

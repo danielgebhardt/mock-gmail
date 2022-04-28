@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from '@mui/material/Button';
 
 const Menu = (props) => {
 
@@ -6,17 +7,19 @@ const Menu = (props) => {
         props.showCurrentEmail({});
         props.clearSearch();
         props.setCompose(false);
+        props.updateInbox();
     }
 
     const composeButtonClicked = () => {
         props.setCompose(true);
+        props.setComposeSent({messageSent: false, statusCode: ''});
     }
 
     return (
         <div className="menu">
-            <button id="inboxButton" className="button" onClick={inboxClicked}>Inbox</button>
+            <Button variant="contained" id="inboxButton" className="button" onClick={inboxClicked}>Inbox</Button>
             <br/><br/>
-            <button id="composeButton" className="button" onClick={composeButtonClicked}>Compose</button>
+            <Button variant="contained" id="composeButton" className="button" onClick={composeButtonClicked}>Compose</Button>
             <br/><br/>
         </div>
     );

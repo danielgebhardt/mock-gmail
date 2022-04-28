@@ -38,8 +38,25 @@
   color: #61dafb;
 }
 
+.composeForm {
+  padding: 40px;
+  float: left;
+  width: 100%;
+}
+
 .searchBar {
-  border: solid #000000 1px;
+  padding: 10px;
+  vertical-align: bottom;
+  font-weight: bold;
+  font-size: 2em;
+  width: 100%;
+  float: right;
+}
+
+.searchBox {
+  width: 60%;
+  float: right;
+  padding-right: 80px;
 }
 
 .sideMenu {
@@ -94,11 +111,6 @@
   width: 25%;
   float: left;
 }
-
-
-
-
-
 
 @keyframes App-logo-spin {
   from {
